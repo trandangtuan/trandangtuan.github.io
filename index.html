@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="/manifest.json">
     <title>Your Web App</title>
+    <script type="module" crossorigin src="/assets/index-5QHtueUs.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-wfYm-v3e.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,12 +26,7 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Your Web App</h1>
-    </header>
-    <section>
-        <p>This is your web app content.</p>
-    </section>
+    <div id="app"></div>
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/service-worker.js')
@@ -41,7 +38,6 @@
                 });
         }
 
-        // You can add more JavaScript for your app's functionality here.
     </script>
 </body>
 </html>
